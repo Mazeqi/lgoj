@@ -1,0 +1,185 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>15.0</VCProjectVersion>
+    <ProjectGuid>{64CF8870-2AAF-46F2-BACA-CACCA2F4967D}</ProjectGuid>
+    <RootNamespace>lg</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.17763.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v120</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v141</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup />
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>false</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <UndefinePreprocessorDefinitions>%(UndefinePreprocessorDefinitions)</UndefinePreprocessorDefinitions>
+      <PreprocessorDefinitions>_CRT_SECURE_NO_WARNINGS;%(PreprocessorDefinitions)</PreprocessorDefinitions>
+    </ClCompile>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClCompile Include="lgoj\01迷宫.cpp" />
+    <ClCompile Include="lgoj\01迷宫题解.cpp" />
+    <ClCompile Include="lgoj\bfs版迷宫.cpp" />
+    <ClCompile Include="lgoj\FileTransver.c" />
+    <ClCompile Include="lgoj\Generalized.cpp" />
+    <ClCompile Include="lgoj\Hash.cpp" />
+    <ClCompile Include="lgoj\marble.cpp" />
+    <ClCompile Include="lgoj\maxSum.cpp" />
+    <ClCompile Include="lgoj\qsort.c" />
+    <ClCompile Include="lgoj\Qsort_soft.cpp" />
+    <ClCompile Include="lgoj\ReverseList.c" />
+    <ClCompile Include="lgoj\selection_sort.cpp" />
+    <ClCompile Include="lgoj\SqStack.cpp" />
+    <ClCompile Include="lgoj\xm.cpp" />
+    <ClCompile Include="lgoj\乒乓球.cpp" />
+    <ClCompile Include="lgoj\八皇后.cpp" />
+    <ClCompile Include="lgoj\六度空间.cpp" />
+    <ClCompile Include="lgoj\六度空间bfs版本.cpp" />
+    <ClCompile Include="lgoj\冒泡排序.c" />
+    <ClCompile Include="lgoj\凌乱的yyy.cpp" />
+    <ClCompile Include="lgoj\分数线划定.cpp" />
+    <ClCompile Include="lgoj\列出连通集.cpp" />
+    <ClCompile Include="lgoj\加分二叉树.cpp" />
+    <ClCompile Include="lgoj\加分二叉树记忆化搜索.cpp" />
+    <ClCompile Include="lgoj\原码一位乘法c语言版本.c" />
+    <ClCompile Include="lgoj\堆中的路径.c" />
+    <ClCompile Include="lgoj\填涂颜色.cpp" />
+    <ClCompile Include="lgoj\多项式相加乘.c" />
+    <ClCompile Include="lgoj\奖学金.cpp" />
+    <ClCompile Include="lgoj\字符串.cpp" />
+    <ClCompile Include="lgoj\宇宙总统竞选.cpp" />
+    <ClCompile Include="lgoj\拼数.cpp" />
+    <ClCompile Include="lgoj\排队接水.cpp" />
+    <ClCompile Include="lgoj\斯诺登.cpp" />
+    <ClCompile Include="lgoj\是否同一棵二叉树.c" />
+    <ClCompile Include="lgoj\果子.cpp" />
+    <ClCompile Include="lgoj\混合牛奶.cpp" />
+    <ClCompile Include="lgoj\源码一位乘法.cpp" />
+    <ClCompile Include="lgoj\瑞士.cpp" />
+    <ClCompile Include="lgoj\纪念品分组.cpp" />
+    <ClCompile Include="lgoj\迷宫.cpp" />
+    <ClCompile Include="lgoj\逆序数.cpp" />
+    <ClCompile Include="lgoj\排座位.cpp" />
+    <ClCompile Include="lgoj\数列分段.cpp" />
+    <ClCompile Include="lgoj\潜伏者.cpp" />
+    <ClCompile Include="lgoj\泛型c++.cpp" />
+    <ClCompile Include="lgoj\fz.c" />
+    <ClCompile Include="lgoj\ghz.c" />
+    <ClCompile Include="lgoj\xy.c" />
+    <ClCompile Include="lgoj\多项式.c" />
+    <ClCompile Include="lgoj\小鱼.c" />
+    <ClCompile Include="lgoj\机器翻译.cpp" />
+    <ClCompile Include="lgoj\移动纸牌.cpp" />
+    <ClCompile Include="lgoj\税收与补贴问题.cpp" />
+    <ClCompile Include="lgoj\花生采摘.cpp" />
+    <ClCompile Include="lgoj\谁拿了最多的奖学金.cpp" />
+    <ClCompile Include="lgoj\链表.cpp" />
+    <ClCompile Include="lgoj\魔法照片。cpp.cpp" />
+    <ClCompile Include="lgoj\黄金分割二分查.c" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
